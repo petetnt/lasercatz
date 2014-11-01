@@ -1,0 +1,136 @@
+.cat-wrap {
+    width: 100vw;
+    max-height: 100vh;
+    display: block;
+    background:
+        linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -50px 100px,
+        linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -50px 100px,
+        linear-gradient(315deg, #ECEDDC 25%, transparent 25%),
+        linear-gradient(45deg, #ECEDDC 25%, transparent 25%);
+    background-size: 100px 100px;
+    background-color: #EC173A;
+
+    animation-name: laser;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    -moz-animation-name: laser;
+    -moz-animation-duration: 0.8s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+
+    -webkit-animation-name: laser;
+    -webkit-animation-duration: 0.8s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+@keyframes laser {
+    0% {
+        background:
+            linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -50px 100px,
+            linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -50px 100px,
+            linear-gradient(315deg, #ECEDDC 25%, transparent 25%) 0 0,
+            linear-gradient(45deg, #ECEDDC 25%, transparent 25%) 0 0,
+            background-color: #ec1717;
+        background-size: 100px 100px;
+
+    }
+
+    50% {
+        background-color: #17ecd3;
+    }
+
+    100% {
+        background:
+            linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -50px 200px,
+            linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -50px 200px,
+            linear-gradient(315deg, #ECEDDC 25%, transparent 25%) 0 100px,
+            linear-gradient(45deg, #ECEDDC 25%, transparent 25%) 0 100px;
+        background-color: #eca217;
+        background-size: 100px 100px;
+
+    }
+}
+
+@-webkit-keyframes laser {
+    0% {
+        background:
+            linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -50px 100px,
+            linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -50px 100px,
+            linear-gradient(315deg, #ECEDDC 25%, transparent 25%) 0 0,
+            linear-gradient(45deg, #ECEDDC 25%, transparent 25%) 0 0,
+            background-color: #ec1717;
+        background-size: 100px 100px;
+
+    }
+
+    50% {
+        background-color: #17ecd3;
+    }
+
+    100% {
+        background:
+            linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -50px 200px,
+            linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -50px 200px,
+            linear-gradient(315deg, #ECEDDC 25%, transparent 25%) 0 100px,
+            linear-gradient(45deg, #ECEDDC 25%, transparent 25%) 0 100px;
+        background-color: #eca217;
+        background-size: 100px 100px;
+
+    }
+}
+
+
+@-moz-keyframes laser {
+    0% {
+        background:
+            linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -50px 100px,
+            linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -50px 100px,
+            linear-gradient(315deg, #ECEDDC 25%, transparent 25%) 0 0,
+            linear-gradient(45deg, #ECEDDC 25%, transparent 25%) 0 0,
+            background-color: #ec1717;
+        background-size: 100px 100px;
+
+    }
+
+    50% {
+        background-color: #17ecd3;
+    }
+
+    100% {
+        background:
+            linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -50px 200px,
+            linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -50px 200px,
+            linear-gradient(315deg, #ECEDDC 25%, transparent 25%) 0 100px,
+            linear-gradient(45deg, #ECEDDC 25%, transparent 25%) 0 100px;
+        background-color: #eca217;
+        background-size: 100px 100px;
+
+    }
+}
+
+.cat-img {
+    max-height: 100vh;
+    width: auto;
+    display: block;
+    position: relative;
+    margin-left: 20%;
+}
+
+#cat-bg-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.cat-hub {
+    height: 36px;
+    width: 36px;
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+}

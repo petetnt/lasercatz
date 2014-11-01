@@ -1,0 +1,25 @@
+{
+  "name": "lasercatz",
+  "version": "0.0.0",
+  "authors": [
+    "petetnt <petelive138@gmail.com>"
+  ],
+  "description": "Yay lasercatz",
+  "main": "js/catz.js",
+  "keywords": [
+    "awesome"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "normalize.css": "~3.0.2"
+  }
+}
