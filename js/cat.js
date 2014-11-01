@@ -1,11 +1,18 @@
 /*jslint browser: true */
 /*global $, YT */
-var player = null;
+var player = null,
+    id = "DZz3y6r-5H8";
 
 function playVideo(evt) {
     'use strict';
     evt.target.playVideo();
-    console.log("yo");
+}
+
+function handleStates(evt) {
+    'use strict';
+    if (evt.data === YT.PlayerState.ENDED) {
+        evt.target.loadVideoById(id);
+    }
 }
 
 function onYouTubeIframeAPIReady() {
@@ -13,9 +20,10 @@ function onYouTubeIframeAPIReady() {
     player = new YT.Player('cat-bg-player', {
         height: '1',
         width: '1',
-        videoId: 'DZz3y6r-5H8',
+        videoId: id,
         events: {
-            "onReady": playVideo
+            "onReady": playVideo,
+            "onStateChange": handleStates
         }
     });
 }
